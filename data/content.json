@@ -1,0 +1,96 @@
+{
+  "name": "Puneeth Raj Y",
+  "title": "MCA Student",
+  "location": "Bangalore",
+  "phone": "9535230531",
+  "email": "puneeth.ys21@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/puneeth-raj-y-22a8123a6/",
+  "github": "https://github.com/Puneeth-Raj-Y",
+  "summary": "MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL. Passionate about developing scalable software solutions, solving complex problems, and writing clean, efficient code in fast-paced environments.",
+  "skills": {
+    "technical": ["Java", "Python", "C++", "DBMS", "REST APIs", "MySQL"],
+    "soft": ["Problem Solving", "Ownership", "Collaboration"]
+  },
+  "experience": [
+    {
+      "title": "Data Science Intern",
+      "company": "Macrolytics",
+      "location": "Bangalore, IND",
+      "duration": "Aug 2023 - Aug 2023",
+      "highlights": [
+        "Designed and implemented data-driven backend modules using Python and SQL for high-volume data processing",
+        "Optimized database queries and improved system efficiency by 60%",
+        "Automated workflows and improved system reliability through structured error handling and logging",
+        "Worked in an agile team to deliver scalable and maintainable software solutions"
+      ],
+      "techStack": ["Python", "SQL", "Git"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Grocery Expense Tracker Application",
+      "description": "Designed and developed a backend-driven application with database integration to manage and track user expenses efficiently. Implemented CRUD operations, optimized SQL queries, and structured relational database schema for performance and scalability. Applied modular coding practices and input validation to ensure data integrity and system reliability. Integrated authentication and session handling for secure user access.",
+      "techStack": ["Python", "SQL (MySQL)", "Git"]
+    },
+    {
+      "title": "Automated Road Extraction using U-Net",
+      "description": "Developed a deep learning model using U-Net architecture for automated road detection from satellite images. Implemented data pre-processing, model training, and evaluation pipeline using Python and TensorFlow/PyTorch. Optimized model performance through hyperparameter tuning and validation techniques.",
+      "techStack": ["Python", "TensorFlow/PyTorch", "NumPy", "OpenCV"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Introduction to Data Analysis Using Python",
+      "provider": "Coursera (Authorized by Google)",
+      "date": "Apr 2026"
+    },
+    {
+      "title": "SAP Certified - Business Data Cloud",
+      "provider": "SAP (Official Certification Authority)",
+      "date": "Apr 2026 - Apr 2027"
+    },
+    {
+      "title": "Data Science Job Simulation",
+      "provider": "Forage",
+      "date": "Jan 2026",
+      "details": "Completed tasks in EDA, Feature Engineering, Modeling, Evaluation"
+    },
+    {
+      "title": "GenAI Powered Data Analytics Job Simulation",
+      "provider": "Forage",
+      "date": "Nov 2025",
+      "details": "EDA, Risk Profiling, AI-driven Strategy, Data Storytelling"
+    },
+    {
+      "title": "Data Analytics Job Simulation",
+      "provider": "Deloitte via Forage",
+      "date": "Nov 2025",
+      "details": "Data Analysis, Forensic Technology"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Science",
+      "institution": "RNS Institute of Technology",
+      "year": "Expected 2027"
+    },
+    {
+      "degree": "Bachelor of Science (Honours)",
+      "institution": "JSS Academy of Technical Education Bangalore",
+      "year": "2021 - 2024"
+    }
+  ],
+  "activities": [
+    {
+      "title": "Runner-Up - Technical Thesis Presentation",
+      "event": "Ignitron 2K25",
+      "organizer": "GM University"
+    },
+    {
+      "title": "Volunteered in AI Hackathon",
+      "event": "College AI Hackathon",
+      "role": "Technical coordination and event execution"
+    }
+  ],
+  "languages": ["English", "Kannada", "Tamil", "Telugu"]
+}

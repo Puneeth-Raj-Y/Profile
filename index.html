@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneeth Raj Y | Portfolio</title>
+    <meta name="description" content="Portfolio of Puneeth Raj Y">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="color-scheme" content="dark">
+</head>
+<body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <div class="bg" aria-hidden="true">
+        <canvas id="bg-canvas"></canvas>
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+        <div class="bg-noise"></div>
+    </div>
+
+    <header class="header" data-elevate>
+        <nav class="nav container" aria-label="Primary">
+            <a class="brand" href="#top" aria-label="Go to top">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-text" data-content="name">Puneeth Raj Y</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content" class="main">
+        <section id="top" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">Hi, I’m</p>
+                    <h1 class="hero-title">
+                        <span class="hero-name" data-content="name">Puneeth Raj Y</span>
+                    </h1>
+                    <p class="hero-subtitle" data-content="title">MCA Student</p>
+                    <p class="hero-summary" data-content="summary">
+                        MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View projects</a>
+                        <a class="btn btn-ghost" href="#contact">Contact</a>
+                        <a class="btn btn-outline" href="assets/resume/PuneethRajY-Resume.pdf" download>Resume (PDF)</a>
+                    </div>
+
+                    <div class="quick-facts" data-reveal>
+                        <div class="fact">
+                            <span class="fact-k">Location</span>
+                            <span class="fact-v" data-content="location">Bangalore</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-k">Email</span>
+                            <a class="fact-v" data-content="email" data-link="email" href="mailto:puneeth.ys21@gmail.com">puneeth.ys21@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card" data-reveal>
+                    <div class="avatar">
+                        <img src="assets/images/profile.jpeg" alt="Portrait of Puneeth Raj Y" loading="eager" decoding="async" onerror="this.style.display='none'">
+                    </div>
+                    <div class="hero-links">
+                        <a class="chip" href="#" target="_blank" rel="noopener noreferrer" data-link="github">GitHub</a>
+                        <a class="chip" href="#" target="_blank" rel="noopener noreferrer" data-link="linkedin">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">About</h2>
+                    <p class="section-kicker">A quick snapshot of what I do.</p>
+                </div>
+                <div class="card prose" data-reveal>
+                    <p data-content="summary">
+                        MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL. Passionate about developing scalable software solutions, solving complex problems, and writing clean, efficient code in fast-paced environments.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-kicker">Tools I use and strengths I bring.</p>
+                </div>
+                <div class="grid-2">
+                    <div class="card" data-reveal>
+                        <h3 class="card-title">Technical</h3>
+                        <div class="tags" id="skills-technical" aria-label="Technical skills"></div>
+                    </div>
+                    <div class="card" data-reveal>
+                        <h3 class="card-title">Soft skills</h3>
+                        <div class="tags" id="skills-soft" aria-label="Soft skills"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-kicker">Selected work and what I built.</p>
+                </div>
+                <div class="grid-3" id="projects-grid" aria-label="Projects list"></div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-kicker">Where I learned and shipped.</p>
+                </div>
+                <div class="stack" id="experience-list" aria-label="Work experience"></div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-kicker">Academic background.</p>
+                </div>
+                <div class="grid-2" id="education-grid" aria-label="Education"></div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-kicker">Proof of learning and upskilling.</p>
+                </div>
+                <div class="stack" id="certifications-list" aria-label="Certifications"></div>
+            </div>
+        </section>
+
+        <section id="activities" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">Activities</h2>
+                    <p class="section-kicker">Extra things I’ve done outside classes.</p>
+                </div>
+                <div class="stack" id="activities-list" aria-label="Activities"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-kicker">Let’s build something.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card" data-reveal>
+                        <h3 class="card-title">Reach me</h3>
+                        <div class="contact-list">
+                            <a class="contact-row" data-link="phone" href="tel:9535230531">
+                                <span class="contact-k">Phone</span>
+                                <span class="contact-v" data-content="phone">9535230531</span>
+                            </a>
+                            <a class="contact-row" data-link="email" href="mailto:puneeth.ry17@gmail.com">
+                                <span class="contact-k">Email</span>
+                                <span class="contact-v" data-content="email">puneeth.ry17@gmail.com</span>
+                            </a>
+                            <a class="contact-row" data-link="linkedin" href="https://www.linkedin.com/in/puneeth-raj-y-653934405/" target="_blank" rel="noopener noreferrer">
+                                <span class="contact-k">LinkedIn</span>
+                                <span class="contact-v">Open profile</span>
+                            </a>
+                            <a class="contact-row" data-link="github" href="https://github.com/Puneeth-Raj-Y" target="_blank" rel="noopener noreferrer">
+                                <span class="contact-k">GitHub</span>
+                                <span class="contact-v">Open profile</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card prose" data-reveal>
+                        <h3 class="card-title">What I’m looking for</h3>
+                        <p>
+                            Internships and entry-level roles where I can contribute to backend systems, APIs, and data-driven applications — while improving code quality, performance, and reliability.
+                        </p>
+                        <div class="tags" id="languages" aria-label="Languages"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <p class="footer-copy">&copy; <span id="year"></span> <span data-content="name">Puneeth Raj Y</span>. All rights reserved.</p>
+            <a class="footer-top" href="#top">Back to top</a>
+        </div>
+    </footer>
+
+    <script id="site-content" type="application/json">
+{
+  "name": "Puneeth Raj Y",
+  "title": "MCA Student",
+  "location": "Bangalore",
+  "phone": "9535230531",
+  "email": "puneeth.ry17@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/puneeth-raj-y-653934405/",
+  "github": "https://github.com/Puneeth-Raj-Y",
+  "summary": "MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL. Passionate about developing scalable software solutions, solving complex problems, and writing clean, efficient code in fast-paced environments.",
+  "skills": {
+    "technical": ["Java", "Python", "C++", "DBMS", "REST APIs", "MySQL"],
+    "soft": ["Problem Solving", "Ownership", "Collaboration"]
+  },
+  "experience": [
+    {
+      "title": "Data Science Intern",
+      "company": "Macrolytics",
+      "location": "Bangalore, IND",
+      "duration": "Aug 2023 - Aug 2023",
+      "highlights": [
+        "Designed and implemented data-driven backend modules using Python and SQL for high-volume data processing",
+        "Optimized database queries and improved system efficiency by 60%",
+        "Automated workflows and improved system reliability through structured error handling and logging",
+        "Worked in an agile team to deliver scalable and maintainable software solutions"
+      ],
+      "techStack": ["Python", "SQL", "Git"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Grocery Expense Tracker Application",
+      "description": "Designed and developed a backend-driven application with database integration to manage and track user expenses efficiently. Implemented CRUD operations, optimized SQL queries, and structured relational database schema for performance and scalability. Applied modular coding practices and input validation to ensure data integrity and system reliability. Integrated authentication and session handling for secure user access.",
+      "techStack": ["Python", "SQL (MySQL)", "Git"]
+    },
+    {
+      "title": "Automated Road Extraction using U-Net",
+      "description": "Developed a deep learning model using U-Net architecture for automated road detection from satellite images. Implemented data pre-processing, model training, and evaluation pipeline using Python and TensorFlow/PyTorch. Optimized model performance through hyperparameter tuning and validation techniques.",
+      "techStack": ["Python", "TensorFlow/PyTorch", "NumPy", "OpenCV"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Introduction to Data Analysis Using Python",
+      "provider": "Coursera (Authorized by Google)",
+      "date": "Apr 2026"
+    },
+    {
+      "title": "SAP Certified - Business Data Cloud",
+      "provider": "SAP (Official Certification Authority)",
+      "date": "Apr 2026 - Apr 2027"
+    },
+    {
+      "title": "Data Science Job Simulation",
+      "provider": "Forage",
+      "date": "Jan 2026",
+      "details": "Completed tasks in EDA, Feature Engineering, Modeling, Evaluation"
+    },
+    {
+      "title": "GenAI Powered Data Analytics Job Simulation",
+      "provider": "Forage",
+      "date": "Nov 2025",
+      "details": "EDA, Risk Profiling, AI-driven Strategy, Data Storytelling"
+    },
+    {
+      "title": "Data Analytics Job Simulation",
+      "provider": "Deloitte via Forage",
+      "date": "Nov 2025",
+      "details": "Data Analysis, Forensic Technology"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Science",
+      "institution": "RNS Institute of Technology",
+      "year": "Expected 2027"
+    },
+    {
+      "degree": "Bachelor of Science (Honours)",
+      "institution": "JSS Academy of Technical Education Bangalore",
+      "year": "2021 - 2024"
+    }
+  ],
+  "activities": [
+    {
+      "title": "Runner-Up - Technical Thesis Presentation",
+      "event": "Ignitron 2K25",
+      "organizer": "GM University"
+    },
+    {
+      "title": "Volunteered in AI Hackathon",
+      "event": "College AI Hackathon",
+      "role": "Technical coordination and event execution"
+    }
+  ],
+  "languages": ["English", "Kannada", "Tamil", "Telugu"]
+}
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
