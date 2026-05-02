@@ -236,10 +236,10 @@
         if (p?.liveUrl || p?.repoUrl) {
           actionsHtml = `<div class="project-actions">`;
           if (p?.liveUrl) {
-            actionsHtml += `<a href="${p.liveUrl}" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>`;
+            actionsHtml += `<a href="${p.liveUrl}" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Demo</a>`;
           }
           if (p?.repoUrl) {
-            actionsHtml += `<a href="${p.repoUrl}" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">View Code</a>`;
+            actionsHtml += `<a href="${p.repoUrl}" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>`;
           }
           actionsHtml += `</div>`;
         }
