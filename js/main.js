@@ -231,10 +231,24 @@
         const card = document.createElement('article');
         card.className = 'card project';
         card.setAttribute('data-reveal', '');
+        
+        let actionsHtml = '';
+        if (p?.liveUrl || p?.repoUrl) {
+          actionsHtml = `<div class="project-actions">`;
+          if (p?.liveUrl) {
+            actionsHtml += `<a href="${p.liveUrl}" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>`;
+          }
+          if (p?.repoUrl) {
+            actionsHtml += `<a href="${p.repoUrl}" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">View Code</a>`;
+          }
+          actionsHtml += `</div>`;
+        }
+
         card.innerHTML = `
           <h3>${escapeHtml(p?.title ?? '')}</h3>
           <p>${escapeHtml(p?.description ?? '')}</p>
           <div class="tags" aria-label="Tech stack"></div>
+          ${actionsHtml}
         `;
         const tags = qs('.tags', card);
         (p?.techStack ?? []).forEach((t) => tags?.appendChild(createTag(t)));
